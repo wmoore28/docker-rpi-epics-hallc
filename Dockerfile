@@ -3,7 +3,7 @@ FROM wmoore28/rpi-epics:latest
 ENV http_proxy=http://jprox.jlab.org:8081 \
     https_proxy=https://jprox.jlab.org:8081
 
-ENV EPICS_CA_ADDR_LIST="129.57.212.45 129.57.212.46 129.57.212.47"
+ENV EPICS_CA_ADDR_LIST="129.57.215.255"
 
 # Added to dialout for access to devices such as /dev/ttyUSB0
 RUN useradd -ms /bin/bash epics \
